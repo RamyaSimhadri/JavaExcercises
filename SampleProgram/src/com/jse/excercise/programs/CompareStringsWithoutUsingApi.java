@@ -13,25 +13,17 @@ public class CompareStringsWithoutUsingApi {
 
 		System.out.println("Enter the second string");
 		s2 = in.nextLine();
-
-		for (int i = 0; i < s1.length() && i < s2.length(); i++) {
-			int a = s1.charAt(i);
-			int b = s2.charAt(i);
-			if (a > b) {
-				System.out.println("string a is greater than string b");// Display
-																		// the
-																		// string
-				break;
-
-			} else if (a < b) {
-				System.out.println("string a is less than string b");
-				break;
-			} else {
-				System.out.println("Strings are equal");
-				break;
+		if (s1.length() == s2.length()) {
+			for (int i = 0; i <= s1.length() && i <= s2.length(); i++) {
+				int a = s1.charAt(i);
+				int b = s2.charAt(i);
+				if (a == b) {
+					System.out.println("string a is equal to b");
+				} else {
+					System.out.println("strings are not equal");// the
+				}
 			}
 		}
-
 	}
 
 	public static void main(String[] args) {
