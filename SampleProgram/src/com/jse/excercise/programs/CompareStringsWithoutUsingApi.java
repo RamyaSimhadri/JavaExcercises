@@ -13,15 +13,23 @@ public class CompareStringsWithoutUsingApi {
 
 		System.out.println("Enter the second string");
 		s2 = in.nextLine();
+		int a, b;
+		boolean isStringsEqual = true;
 		if (s1.length() == s2.length()) {
-			for (int i = 0; i <= s1.length() && i <= s2.length(); i++) {
-				int a = s1.charAt(i);
-				int b = s2.charAt(i);
-				if (a == b) {
-					System.out.println("string a is equal to b");
-				} else {
-					System.out.println("strings are not equal");// the
-				}
+			for (int i = 0; i < s1.length(); i++) {
+				a = s1.charAt(i);
+				b = s2.charAt(i);
+				if (a != b) {
+					isStringsEqual = false;
+					break; // exist for loop
+				} // end of if
+				// end of for loop
+
+			}
+			if (isStringsEqual) {
+				System.out.println("The given two strings are equal");
+			} else {
+				System.out.println("The given two strings are not equal");
 			}
 		}
 	}
