@@ -2,6 +2,8 @@ package com.jse.excercise.programs;
 
 import java.util.Scanner;
 
+/*Floyd's traingle:
+ * Floyd’s triangle is a right angled-triangle using the natural numbers*/
 public class FloydsTraingle {
 
 	public void floyd() {
