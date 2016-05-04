@@ -5,8 +5,6 @@ import java.util.Scanner;
 /*
 Program logic: Take a year through user and divide the year by 4 or 400,
  if the remainder is zero then it is a leap year else it is not a leap year.
-
-
 */
 public class DetermineLeapYrExample {
 
@@ -32,7 +30,6 @@ public class DetermineLeapYrExample {
 
 	}
 
-	// main method begins execution of this class
 	public static void main(String args[]) {
 		DetermineLeapYrExample LeapYr = new DetermineLeapYrExample();
 		LeapYr.check();
